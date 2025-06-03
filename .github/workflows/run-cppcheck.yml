@@ -40,7 +40,7 @@ jobs:
       - name: Run CppCheck
         shell: bash
         run: |
-          cppcheck \
+          cppcheck main.c \
             --enable=all \
             --addon=$GITHUB_WORKSPACE/.github/scripts/misra.json \
             --force \
